@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpi8ut1waco2b"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ves6y"]
+font_size = 40
+font_color = Color(0.629675, 0.629675, 0.629675, 1)
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Counter" type="CanvasLayer"]
+
+[node name="CounterLabelCanvas" type="Label" parent="."]
+offset_left = 1242.0
+offset_top = 5.0
+offset_right = 1578.0
+offset_bottom = 190.0
+label_settings = SubResource("LabelSettings_ves6y")
+horizontal_alignment = 2

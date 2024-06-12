@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://nwaj4c1tlwu2"]
+
+[ext_resource type="Script" path="res://scripts/EndingButton.cs" id="1_wgnat"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8424v"]
+font_size = 58
+font_color = Color(0.770081, 0.770081, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 2283.0
+offset_bottom = 1249.0
+color = Color(0.78093, 0.226895, 0.112198, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect"]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 258.0
+offset_right = 1457.0
+offset_bottom = 589.0
+text = "THANKS FOR PLAYING THE GAME"
+label_settings = SubResource("LabelSettings_8424v")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/ColorRect"]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 690.0
+offset_right = 1359.0
+offset_bottom = 951.0
+theme_override_font_sizes/font_size = 50
+text = "EXIT THE GAME"
+script = ExtResource("1_wgnat")
